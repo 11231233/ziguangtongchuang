@@ -1,0 +1,39 @@
+# Local reproducible build outputs
+/build/
+/compile/
+/synthesize/
+/device_map/
+/place_route/
+/constraint_check/
+/generate_bitstream/
+/generate_netlist/
+/report_power/
+/report_timing/
+/sim/out/
+/sim/results/
+__pycache__/
+*.pyc
+*.vvp
+*.lock
+~$*
+# Full offline ZIP exceeds GitHub single-file limits; extracted evidence is included.
+/local_archives/
+# Duplicate generated PDS databases are retained locally, reports and source are elsewhere.
+data_sources/PDS/compile/
+data_sources/PDS/synthesize/
+data_sources/PDS/device_map/
+data_sources/PDS/constraint_check/
+data_sources/PDS/generate_netlist/
+data_sources/PDS/rtl/
+data_sources/PDS/constr/
+data_sources/PDS/place_route/*.db
+data_sources/PDS/place_route/*.adf
+data_sources/PDS/report_timing/*.db
+data_sources/PDS/report_timing/*.adf
+data_sources/PDS/generate_bitstream/*.db
+data_sources/PDS/generate_bitstream/*.bgr
+# Credentials and personal machine settings
+.env
+.env.*
+*.pem
+*.key

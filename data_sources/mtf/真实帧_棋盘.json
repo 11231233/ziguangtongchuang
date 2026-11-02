@@ -1,0 +1,152 @@
+{
+  "image": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_21733_20261101_094132_370484.png",
+  "label": "真实帧_棋盘",
+  "unit": "cycles/pixel",
+  "nyquist": 0.5,
+  "results": [
+    {
+      "roi": [
+        864,
+        840,
+        912,
+        888
+      ],
+      "edge_normal": [
+        0.9688,
+        -0.2479
+      ],
+      "edge_angle_deg": -14.35,
+      "contrast": 106.6013986013986,
+      "mtf50": 0.0559,
+      "mtf30": 0.06232393333683335,
+      "mtf10": 0.06788088672939328,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 207,
+      "bin_px": 0.2511,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 0.979,
+      "trustworthy": false
+    },
+    {
+      "roi": [
+        204,
+        660,
+        252,
+        708
+      ],
+      "edge_normal": [
+        0.9139,
+        0.4059
+      ],
+      "edge_angle_deg": 23.95,
+      "contrast": 187.9625,
+      "mtf50": 0.2169,
+      "mtf30": 0.2436387015328353,
+      "mtf10": 0.3264095166300658,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 220,
+      "bin_px": 0.2508,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 0.41,
+      "trustworthy": true
+    },
+    {
+      "roi": [
+        180,
+        708,
+        228,
+        756
+      ],
+      "edge_normal": [
+        0.9224,
+        0.3862
+      ],
+      "edge_angle_deg": 22.72,
+      "contrast": 170.76190476190476,
+      "mtf50": 0.2086,
+      "mtf30": 0.22051039655602,
+      "mtf10": 0.3161986597312864,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 218,
+      "bin_px": 0.2514,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 0.291,
+      "trustworthy": true
+    },
+    {
+      "roi": [
+        168,
+        600,
+        216,
+        648
+      ],
+      "edge_normal": [
+        0.7912,
+        0.6115
+      ],
+      "edge_angle_deg": 37.7,
+      "contrast": 101.45,
+      "mtf50": 0.0583,
+      "mtf30": 0.06775947673317098,
+      "mtf10": 0.20157218953703537,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 231,
+      "bin_px": 0.2516,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 8.462,
+      "trustworthy": false
+    },
+    {
+      "roi": [
+        204,
+        804,
+        252,
+        852
+      ],
+      "edge_normal": [
+        0.7725,
+        0.635
+      ],
+      "edge_angle_deg": 39.42,
+      "contrast": 92.14285714285714,
+      "mtf50": 0.0696,
+      "mtf30": 0.08566987820024748,
+      "mtf10": 0.10998379998872654,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 232,
+      "bin_px": 0.251,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 7.781,
+      "trustworthy": false
+    },
+    {
+      "roi": [
+        468,
+        720,
+        516,
+        768
+      ],
+      "edge_normal": [
+        0.8911,
+        0.4538
+      ],
+      "edge_angle_deg": 26.99,
+      "contrast": 192.73333333333332,
+      "mtf50": 0.0805,
+      "mtf30": 0.10133489795905225,
+      "mtf10": 0.1265810935080899,
+      "mtf50_resolved": true,
+      "mtf50_note": "",
+      "esf_bins": 224,
+      "bin_px": 0.251,
+      "nyquist": 0.5,
+      "edge_line_rms_px": 2.168,
+      "trustworthy": false
+    }
+  ]
+}

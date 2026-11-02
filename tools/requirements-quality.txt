@@ -1,0 +1,5 @@
+numpy
+opencv-python
+Pillow
+# Tkinter is included by the standard Windows Python installer.
+# pyserial is NOT required for the photo-assisted quality workbench.

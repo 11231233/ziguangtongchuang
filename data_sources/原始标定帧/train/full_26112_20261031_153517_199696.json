@@ -1,0 +1,135 @@
+{
+  "schema": "verified_margin_raw_v1",
+  "source_kind": "fpga_full_raw_reconstructed",
+  "camera": "C1",
+  "image_size": [
+    1296,
+    972
+  ],
+  "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+  "geometry_id": 1627182983,
+  "source_frame_id": 26112,
+  "footer_verified": true,
+  "pc_geometry_transform_applied": false,
+  "source_size_verified_by_tag": true,
+  "reconstructed_from": [
+    {
+      "path": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\capture_0.png",
+      "sha256": "af483c69eb2b76f6b2cfd52d637b0293cda6d792ec6f9d93fbedb91b0ec6d5a4",
+      "tag": {
+        "page": 0,
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 26112,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\transport_original_0.png",
+          "original_sha256": "2647eb6b26884c2ff237d15f4a2918965c3f7dd03b079cee022ae55a526ca3d4",
+          "canonical_sha256": "af483c69eb2b76f6b2cfd52d637b0293cda6d792ec6f9d93fbedb91b0ec6d5a4",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\capture_1.png",
+      "sha256": "1d4fc0d8a0df946e76ad3f078795638f9a3366250f4afdf8d13b05c69cc321a4",
+      "tag": {
+        "page": 1,
+        "x": 16,
+        "y": 0,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 26112,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\transport_original_1.png",
+          "original_sha256": "18533d65eb591922e5f840f4ed2bb507a88aed991322b0960904fbd21a0e3e4c",
+          "canonical_sha256": "1d4fc0d8a0df946e76ad3f078795638f9a3366250f4afdf8d13b05c69cc321a4",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\capture_2.png",
+      "sha256": "4ff4d3bb4ed2c937cc9551d3ce51567a47e343f88c04c0e3d646b9a282f8b666",
+      "tag": {
+        "page": 2,
+        "x": 0,
+        "y": 284,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 26112,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\transport_original_2.png",
+          "original_sha256": "3cadc15c9d436cb7da4eb88002f8eecd667fc5136fc71ea909deee6792651721",
+          "canonical_sha256": "4ff4d3bb4ed2c937cc9551d3ce51567a47e343f88c04c0e3d646b9a282f8b666",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\capture_3.png",
+      "sha256": "67499b1c0fd99ee879da553b506807fc92485c3adb9369f5b136d0cf3520a845",
+      "tag": {
+        "page": 3,
+        "x": 16,
+        "y": 284,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 26112,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\raw_groups\\frame_26112_20261031_153516_788453\\transport_original_3.png",
+          "original_sha256": "49a78c0bd6bef7bc086991395e0c36ebf0e3dc92aae417db33da3b7fcc36b9a0",
+          "canonical_sha256": "67499b1c0fd99ee879da553b506807fc92485c3adb9369f5b136d0cf3520a845",
+          "footer_crc_verified": true
+        }
+      }
+    }
+  ],
+  "overlap_checks": [
+    {
+      "page": 1,
+      "mean_abs": 0.0019924136492984004,
+      "p99": 0.0
+    },
+    {
+      "page": 2,
+      "mean_abs": 0.0018545018564356435,
+      "p99": 0.0
+    },
+    {
+      "page": 3,
+      "mean_abs": 0.0019537432731877176,
+      "p99": 0.0
+    }
+  ],
+  "capture_compression_independently_verified": false,
+  "calibrated_model_applied": false,
+  "physical_lens_calibration_complete": false,
+  "image_sha256": "745a0f1b5794979d5d55d03966e2058fd91c5c47c556fe6855ec0dee16440ca8",
+  "dataset_split": "train"
+}

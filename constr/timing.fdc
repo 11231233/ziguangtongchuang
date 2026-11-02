@@ -1,0 +1,96 @@
+# ============================================================================
+# timing.fdc — top_pangu50 的时钟 / 异步域 / DDR PHY 约束
+# ----------------------------------------------------------------------------
+# 说明（踩过的坑，别再踩）：
+#  1) PDS 只接受 .fdc，不接受 .sdc（Flow-0058）。
+#  2) 命令行【不能写行尾注释】：create_clock ... # 注释 会被当成参数，
+#     报 E: Flow-0072: the argument '#' is not defined。注释必须单独成行。
+#  3) PDS 在约束导入阶段解析本文件，此时综合已完成：
+#     get_ports / get_pins / 推断出的时钟名都可用；get_nets 仍不可用。
+#  4) 没有 create_clock 时 PDS 按 1MHz 默认周期分析，结论没有意义。
+# ============================================================================
+
+# ---------------------------------------------------------------- 主时钟
+# 50MHz 板载晶振 P20
+create_clock -name sys_clk -period 20.000 [get_ports sys_clk]
+
+# OV5640 byte clock: 720p30 trial uses the datasheet 84 MHz PCLK setting
+# (0x3036=0x69, 0x3035=0x21, 0x3037=0x13). Frame rate still needs board measurement.
+create_clock -name cam_pclk -period 11.905 [get_ports cam_pclk]
+
+# HDMI 输出像素时钟 74.25MHz（标准720p60时序，1650x750@60Hz）
+# 同时约束输出端口，保证 pixclk_out 走时钟资源（否则显示器可能无信号）
+create_clock -name clk_pix_out -period 13.468013 [get_ports pixclk_out]
+
+# ---------------------------------------------------------------- PLL 派生时钟（显式命名）
+# 不显式命名的话，工具会给 PLL 输出起名 sys_clk|u_pll/u_pll_e3/CLKOUTx_Inferred，
+# 这个名字在约束导入阶段还不存在，导致无法对它们写 false_path。
+# Main PLL: VCO 750MHz; outputs pixel reference 75MHz, control 10MHz/25MHz.
+# Pixel PLL: 75MHz /10 *99 /10 = 74.25MHz; PFD=7.5MHz LOW, VCO=742.5MHz.
+create_generated_clock -name clk_pix_ref -source [get_ports sys_clk] -multiply_by 3 -divide_by 2 [get_pins u_pll/clkout0]
+create_generated_clock -name clk_pix -source [get_pins u_pll/clkout0] -multiply_by 99 -divide_by 100 [get_pins u_pixel_pll/clkout0]
+create_generated_clock -name cfg_clk  -source [get_ports sys_clk] -multiply_by 1  -divide_by 5   [get_pins u_pll/clkout1]
+create_generated_clock -name clk_25m  -source [get_ports sys_clk] -multiply_by 1  -divide_by 2   [get_pins u_pll/clkout2]
+
+# Actual register divider: 25MHz/(2*1250)=10kHz. Explicit clock buffer exposes the generated clock.
+
+# ---------------------------------------------------------------- 异步时钟组
+# sys_clk / cam_pclk / clk_pix 来自不同源，必须声明异步。
+set_clock_groups -asynchronous -group {sys_clk} -group {cam_pclk} -group {clk_pix_out}
+set_clock_groups -asynchronous -group {clk_pix} -group {cfg_clk clk_25m} -group {cam_pclk} -group {sys_clk}
+
+# ---------------------------------------------------------------- DDR3 PHY
+# DDR3 IP 内部生成时钟（实例名来自 DDR3_50H.v）
+create_generated_clock -name {ddrphy_clkin} -source [get_ports sys_clk] -multiply_by 16 -divide_by 8 [get_pins u_DDR3_50H.I_GTP_CLKDIV:CLKDIVOUT]
+create_generated_clock -name {ioclk0} -source [get_ports sys_clk] -multiply_by 16 -divide_by 2 [get_pins u_DDR3_50H.I_GTP_IOCLKBUF_0:CLKOUT]
+create_generated_clock -name {ioclk1} -source [get_ports sys_clk] -multiply_by 16 -divide_by 2 [get_pins u_DDR3_50H.I_GTP_IOCLKBUF_1:CLKOUT]
+create_generated_clock -name {ioclk2} -source [get_ports sys_clk] -multiply_by 16 -divide_by 2 [get_pins u_DDR3_50H.I_GTP_IOCLKBUF_2:CLKOUT]
+create_generated_clock -name {ioclk_gate_clk} -source [get_ports sys_clk] -multiply_by 16 -divide_by 8 [get_pins u_DDR3_50H.u_clkbufg_gate:CLKOUT]
+
+set_clock_uncertainty 0.200 [get_clocks ddrphy_clkin] -setup
+# 实测 DDR 域 hold 差 25ps：给 hold 额外留 50ps 余量，让 PNR 主动修
+set_clock_uncertainty -hold 0.050 [get_clocks ddrphy_clkin]
+
+set_clock_groups -name ref_clk -asynchronous -group [get_clocks {sys_clk}]
+set_clock_groups -name ioclk0 -asynchronous -group [get_clocks ioclk0]
+set_clock_groups -name ioclk1 -asynchronous -group [get_clocks ioclk1]
+set_clock_groups -name ioclk2 -asynchronous -group [get_clocks ioclk2]
+set_clock_groups -name ioclk_gate_clk -asynchronous -group [get_clocks ioclk_gate_clk]
+set_clock_groups -name ddrphy_clkin -asynchronous -group [get_clocks ddrphy_clkin]
+
+# PHY 固定位置（两个 PHY PLL 与 gate 触发器的合法站点）
+define_attribute {i:u_DDR3_50H.u_ipsxb_ddrphy_pll_0/u_pll_e3} {PAP_LOC} {PLL_158_199}
+define_attribute {i:u_DDR3_50H.u_ipsxb_ddrphy_pll_1/u_pll_e3} {PAP_LOC} {PLL_158_179}
+define_attribute {i:u_DDR3_50H.u_ddrphy_top/ddrphy_reset_ctrl/ddrphy_ioclk_gate} {PAP_LOC} {CLMA_150_192:FF3}
+
+# ---------------------------------------------------------------- 复位同步器的异步复位路径
+# reset_sync 的异步复位输入来自 PLL 配置时钟域（CLKOUT1=9.96MHz / CLKOUT2=25MHz）。
+# 这些信号只在启动时翻转一次，且已做“异步拉低、同步释放”，
+# 对它们的 recovery 检查没有意义（PDS 实测报 -3.681ns）。
+# 按异步处理，避免工具去修一条本质上不存在的路径。
+set_false_path -from [get_clocks cfg_clk] -to [get_clocks clk_pix]
+set_false_path -from [get_clocks clk_25m] -to [get_clocks cam_pclk]
+
+# ---------------------------------------------------------------- 与 DDR3 同 BANK 的按键 / LED
+# key0 与 led[1..7] 和 DDR3 同 BANK，BANK 电压由核心板定为 1.5V；
+# 若沿用 3.3V 会报 ConstraintEditor-0003。本文件后应用，后定义生效。
+# （key1..key7 在其它 BANK，保持 3.3V）
+define_attribute {p:key0}   {PAP_IO_VCCIO} {1.5}
+define_attribute {p:key0}   {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[1]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[1]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[2]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[2]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[3]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[3]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[4]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[4]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[5]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[5]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[6]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[6]} {PAP_IO_STANDARD} {LVCMOS15}
+define_attribute {p:led[7]} {PAP_IO_VCCIO} {1.5}
+define_attribute {p:led[7]} {PAP_IO_STANDARD} {LVCMOS15}
+
+# （摄像头像素时钟已改为 dvp_capture 内部异步 FIFO，不再需要派生时钟约束）
+

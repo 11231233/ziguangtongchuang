@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "model": "C:\\Users\\肖永康\\Desktop\\ziguangtongchuang\\calib\\calibration.json",
+  "model_sha256": "8dc41c5844ab1aed3cebfb0dd899882a9916c9a6de8a0602e49328bdc83ea50c",
+  "controls": "C:\\Users\\肖永康\\Desktop\\ziguangtongchuang\\rtl\\common\\margin_runtime_controls.v",
+  "controls_sha256": "2f3fa178f585df4ba48501661fa449f28d66b5793fc3ed7f472c9270a1ac97dd",
+  "intrinsics": {
+    "fx": 324.0745870611327,
+    "fy": 324.18268636340764,
+    "cx": 646.663311837213,
+    "cy": 464.3179088942915
+  },
+  "tangential": {
+    "p1": -1.3972352898303683e-05,
+    "p2": 2.878421380513896e-05
+  },
+  "radial": {
+    "k1": 0.15462467751355574,
+    "k2": 0.002330084238991759,
+    "k3": 1.5840244608753291e-06,
+    "k4": 0.32898395278723586,
+    "k5": 0.014179659521167133,
+    "k6": 5.1143245674377294e-05
+  },
+  "output_camera": {
+    "fx": 324.0745870611327,
+    "fy": 324.18268636340764,
+    "cx": 638.663311837213,
+    "cy": 338.3179088942915,
+    "width": 1280,
+    "height": 720,
+    "selection": "fixed central virtual view at source pixel scale; never adjusted with rotation"
+  },
+  "train_rms_px": 0.8222528269062223,
+  "heldout_rms_px": 0.9467105383516359,
+  "ready_for_runtime": true,
+  "angles_checked": 41,
+  "angle_range": [
+    -20,
+    20
+  ],
+  "mismatched_angles": [],
+  "statement": "The 41 coefficient sets in the runtime ROM are re-derived from calibration.json and compared word for word. A pass means the board runs the parsed real calibration, not hand-entered numbers."
+}

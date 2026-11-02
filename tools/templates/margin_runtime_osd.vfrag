@@ -1,0 +1,5 @@
+metrics_osd #(.SINGLE_CAMERA(1),.SHOW_ANGLE(1)) u_osd(.clk(clk_pix),.rstn(rstn_pix),.vs(vs_aligned),.de(de_aligned),
+        .angle_bcd(angle_bcd),.angle_toggle(angle_toggle),
+        .key_n(osd_key_n),.c2_status(camera_status),.c2_status_toggle(camera_status_toggle),.c2_phase(phase_sync_ddr[1]),.probe(camera_probe_visible),.display_quality(display_quality),.overlay_active(osd_overlay),.camera_selected(1'b0),.fusion_enabled(1'b0),.fusion_used(1'b0),.format2(decode_active),.frozen(display_frozen),.x(x_aligned),.y(y_aligned),.pixel(fb_pix),
+        .snapshot(metric_snapshot),.snapshot_toggle(metric_toggle),.result(osd_pixel),.enabled());
+    defparam u_osd.PIPELINE_FONT = 1;

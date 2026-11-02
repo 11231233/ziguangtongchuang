@@ -1,0 +1,43 @@
+{
+  "model_kind": "rational5x6",
+  "fx": 324.0745870611327,
+  "fy": 324.18268636340764,
+  "cx": 646.663311837213,
+  "cy": 464.3179088942915,
+  "k1": 0.15462467751355574,
+  "k2": 0.002330084238991759,
+  "p1": -1.3972352898303683e-05,
+  "p2": 2.878421380513896e-05,
+  "k3": 1.5840244608753291e-06,
+  "k4": 0.32898395278723586,
+  "k5": 0.014179659521167133,
+  "k6": 5.1143245674377294e-05,
+  "camera": "C1",
+  "image_size": [
+    1296,
+    972
+  ],
+  "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+  "output_camera": {
+    "fx": 324.0745870611327,
+    "fy": 324.18268636340764,
+    "cx": 638.663311837213,
+    "cy": 338.3179088942915,
+    "width": 1280,
+    "height": 720,
+    "selection": "fixed central virtual view at source pixel scale; never adjusted with rotation"
+  },
+  "radial_lut": "results ROM radial_lut.hex (2048 cells, Q24 base+delta, Q16 out)",
+  "rtl_radial_path": "RADIAL_MODEL_LUT=1, lut_enable=1 (k1,k2 forced to 0)",
+  "source_kind": "verified_margin_raw_calibration",
+  "synthetic_test_data": false,
+  "train_rms_px": 0.8222528269062223,
+  "pattern": [
+    6,
+    9
+  ],
+  "square_mm": 24.0,
+  "training_frames": 28,
+  "validation_frames": 10,
+  "mirror_note": "Sensor mirror bits enabled (0x3821=0x07); this model is the exact mirror transform of the approved fit: cx -> (W-1)-cx, p2 -> -p2, radial unchanged."
+}

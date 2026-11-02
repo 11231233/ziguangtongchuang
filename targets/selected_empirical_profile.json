@@ -1,0 +1,40 @@
+{
+  "description": "S2 Z0 nominal 1x matched RAW/COR geometry; single-view preliminary calibration",
+  "lens_calibrated": false,
+  "source": "calib/ov5640_indirect_single_01.json",
+  "strength": 2,
+  "zoom_index": 0,
+  "image_size": [
+    1280,
+    720
+  ],
+  "signed_q16_coefficients": {
+    "A": 126,
+    "B": 0,
+    "C": -80660,
+    "D": 0,
+    "E": 126,
+    "F": -45371,
+    "k1": -21061,
+    "k2": 7082,
+    "p1": 0,
+    "p2": 0,
+    "fx": 34078720,
+    "fy": 34078720,
+    "cx": 41943040,
+    "cy": 23592960
+  },
+  "geometry_guard": {
+    "passed": true,
+    "output_pixels": 921600,
+    "valid_pixels": 921600,
+    "window_misses": 0,
+    "coordinate_map_uploaded": false
+  },
+  "uart_packet_hex_optional": "a55a01017e00000000000000ecc4feff000000007e000000c54effffbbadffffaa1b00000000000000000000000008020000080200008002000068016192",
+  "current_bitstream_defaults_changed": true,
+  "default_for_release": "ov5640_matched_dual_20261025",
+  "calibration_scope": "ov5640_indirect_monitor_estimate",
+  "rms": 4.2775,
+  "views": 1
+}

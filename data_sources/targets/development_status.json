@@ -1,0 +1,47 @@
+{
+  "schema": "rational_lut_runtime_v1",
+  "runtime_top_integrated": true,
+  "real_calibration_approved": true,
+  "formal_bitstream_available": true,
+  "hardware_tested": false,
+  "bitstream": {
+    "path": "build/runtime_r5_20261101/generate_bitstream/top_pangu50.sbit",
+    "sha256": "7ECEFB0687A76BF126DE3DCC9F9AB1BF7C2FAC60680660DC75121746988979D1",
+    "build": "runtime_r5_20261101",
+    "pds_passed": true,
+    "timing": {"clk_pix_setup_wns_ns": 2.951, "clk_pix_hold_whs_ns": 0.254, "failing_endpoints": 0},
+    "utilization": {"LUT": "8371/25800 (33%)", "DRM": "33.5/134 (25%)", "APM": "54.5/84 (65%)"}
+  },
+  "approved_by": "operator instruction, 2026-11-01: proceed with the hardware calibration, angle control on board keys",
+  "approval_basis": {
+    "calibration_run": "F:/codex_ziguang/c1_lut_runtime_20261031/results/formal_rational_r5",
+    "train_rms_px": 0.8223,
+    "heldout_rms_px": 0.9467,
+    "max_view_rms_px": 1.4858,
+    "validation_edges_rms_px": {"left": 0.98, "right": 0.18, "top": 0.78, "bottom": 0.89},
+    "mapping_audit": "41 angles, full resolution, max fixed-point error 0.0295 px, min jacobian 0.9942, 0 invalid pixels",
+    "spatial_coverage_passed": true,
+    "ready_for_runtime": true,
+    "reasons": []
+  },
+  "integrated_path": {
+    "radial_model": "rational5x6 via 2048-cell Q24 LUT",
+    "rom": "rtl/warp/radial_lut.hex",
+    "rom_sha256": "3F51571AB58FD7662BF0E057DC155C2162BD103A1D6F4A60808CDE51F149AED2",
+    "warp_frame_params": "RADIAL_MODEL_LUT=1, RADIAL_LUT_FILE=<absolute>",
+    "lut_enable": "local_correction_active (KEY0 short = RAW/COR)",
+    "angle_control": "on-board keys, 41 steps of 1 degree in -20..20"
+  },
+  "rtl_full_frame_tested": true,
+  "rtl_full_frame_evidence": {
+    "0deg_corrected": {"pixels_exact": 921600, "cycles": 1069191},
+    "plus20_corrected": {"pixels_exact": 921600, "cycles": 1096116},
+    "minus20_corrected": {"pixels_exact": 921600, "cycles": 1096299},
+    "raw_bypass_0deg": {"pixels_exact": 921600, "cycles": 1069616, "lut_enable": 0},
+    "shared_ddr": "no missed display deadline in any run",
+    "default_path_regression": "5 coefficient sets x 137 vectors within +/-0.125 px",
+    "script": "c1_lut_runtime_20261031/scripts/verify_margin_corrected_frame_lut.py",
+    "note": "Source pixels are synthetic; this proves the datapath and the table, not optical accuracy."
+  },
+  "note": "Bitstream not yet built or tested on hardware. hardware_tested must stay false until real board measurements exist."
+}

@@ -1,0 +1,65 @@
+`timescale 1ns/1ps
+`default_nettype none
+// Low-active board keys. Coefficients change only when a complete source frame
+// is accepted, never in the middle of a tile or a frame. Presets are empirical.
+module warp_controls #(parameter integer DEBOUNCE_CYCLES=1000000)(
+ input wire clk,rstn,input wire [3:0] key_n,input wire frame_start,
+ output reg signed [31:0] A,C,E,F,fx,fy,cx,cy,k1,k2,
+ output reg enabled,output reg [1:0] strength,zoom,
+ output reg active_enabled,output reg [1:0] active_strength,active_zoom,
+ output wire restore_defaults);
+ (* async_reg="true" *)reg [3:0] sync1,sync2;
+ reg [3:0] stable,hit;
+ assign restore_defaults=hit[3];
+ reg [19:0] count[0:3];integer i;
+ always @(posedge clk)begin
+  if(!rstn)begin
+   sync1<=4'hf;sync2<=4'hf;stable<=4'hf;hit<=0;
+   for(i=0;i<4;i=i+1)count[i]<=0;
+  end else begin
+   sync1<=key_n;sync2<=sync1;hit<=0;
+   for(i=0;i<4;i=i+1)begin
+    if(sync2[i]==stable[i])count[i]<=0;
+    else if(count[i]==DEBOUNCE_CYCLES-1)begin
+     stable[i]<=sync2[i];count[i]<=0;
+     if(!sync2[i])hit[i]<=1;
+    end else count[i]<=count[i]+1'b1;
+   end
+  end
+ end
+ always @(posedge clk)begin
+  if(!rstn)begin enabled<=1;strength<=2;zoom<=1;end
+  else if(hit[3])begin enabled<=1;strength<=2;zoom<=1;end
+  else begin
+   if(hit[0])enabled<=!enabled;
+   if(hit[1])strength<=strength+1'b1;
+   if(hit[2])zoom<=(zoom==2)?0:zoom+1'b1;
+  end
+ end
+ always @(posedge clk)begin
+  if(!rstn)begin
+   A<=101;E<=101;C<=-64528;F<=-36297;fx<=34078720;fy<=34078720;cx<=41943040;cy<=23592960;
+   k1<=-26214;k2<=7864;active_enabled<=1;active_strength<=2;active_zoom<=1;
+  end else if(frame_start)begin
+   active_enabled<=enabled;active_strength<=strength;active_zoom<=zoom;
+   if(!enabled)begin
+    // Exact identity: (x/512)*512=x, with no normalization overflow.
+    A<=128;E<=128;C<=0;F<=0;fx<=33554432;fy<=33554432;cx<=0;cy<=0;k1<=0;k2<=0;
+   end else begin
+    fx<=34078720;fy<=34078720;cx<=41943040;cy<=23592960;
+    case(zoom)
+     0:begin A<=126;E<=126;C<=-80660;F<=-45370;end
+     1:begin A<=101;E<=101;C<=-64528;F<=-36297;end
+     default:begin A<=82;E<=82;C<=-52429;F<=-29491;end
+    endcase
+    case(strength)
+     0:begin k1<=-7864;k2<=1311;end  // -0.12, +0.02
+     1:begin k1<=-18350;k2<=5243;end // -0.28, +0.08 (last release)
+     2:begin k1<=-26214;k2<=7864;end // -0.40, +0.12
+     3:begin k1<=-32768;k2<=10486;end // -0.50, +0.16
+    endcase
+   end
+  end
+ end
+endmodule
+`default_nettype wire

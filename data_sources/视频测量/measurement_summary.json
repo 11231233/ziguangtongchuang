@@ -1,0 +1,19 @@
+{
+  "samples": 18,
+  "median_ms": 105.0,
+  "mean_ms": 108.33333333333333,
+  "min_ms": 80,
+  "max_ms": 140,
+  "sample_p95_ms": 140,
+  "below_100ms_count": 5,
+  "exactly_100ms_count": 4,
+  "above_100ms_count": 9,
+  "rolling_shutter_correction_applied_ms": 0,
+  "method": "Manual same-frame paired clock readings; original frames retained. 25 roughly 1s-spaced frames reviewed; ambiguous/transition digits excluded; frame447 added as separately inspected evidence. Small descriptive sample, not a certification.",
+  "limitations": [
+    "Clock quantization/readout and video compression introduce roughly 10ms-scale uncertainty; this is not a calibrated accuracy bound.",
+    "Reference and HDMI clocks lie on different recording-image rows. Recording-camera rolling-shutter direction/readout time are unknown. No assumed 12ms subtraction.",
+    "Phone-display update phase, sensor exposure/rolling readout and monitor scan/processing contribute to optical measurement.",
+    "Video does not identify the bitstream hash. OSD CALC about14ms is distinct from optical latency."
+  ]
+}

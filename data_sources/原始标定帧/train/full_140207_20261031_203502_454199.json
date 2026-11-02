@@ -1,0 +1,135 @@
+{
+  "schema": "verified_margin_raw_v1",
+  "source_kind": "fpga_full_raw_reconstructed",
+  "camera": "C1",
+  "image_size": [
+    1296,
+    972
+  ],
+  "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+  "geometry_id": 1627182983,
+  "source_frame_id": 140207,
+  "footer_verified": true,
+  "pc_geometry_transform_applied": false,
+  "source_size_verified_by_tag": true,
+  "reconstructed_from": [
+    {
+      "path": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\capture_0.png",
+      "sha256": "f1fbf7bf076943c0d873c6b2f2d3ea04884cf8b28a50fc342ed8e36ca9f7edcd",
+      "tag": {
+        "page": 0,
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 140207,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\transport_original_0.png",
+          "original_sha256": "3ce368e353ad9e04f478cbc3eb37729b19792600866fdaa3d7d8aa5183c48923",
+          "canonical_sha256": "f1fbf7bf076943c0d873c6b2f2d3ea04884cf8b28a50fc342ed8e36ca9f7edcd",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\capture_1.png",
+      "sha256": "86525d0f3856c91559e9747ac158797fa6ebf0ddcf6bde5cde7f425aa0aef37f",
+      "tag": {
+        "page": 1,
+        "x": 16,
+        "y": 0,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 140207,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\transport_original_1.png",
+          "original_sha256": "ae2229c78587ebbb285349d8328d566c6d35e537e9aa890cb801c4a23c3f4d58",
+          "canonical_sha256": "86525d0f3856c91559e9747ac158797fa6ebf0ddcf6bde5cde7f425aa0aef37f",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\capture_2.png",
+      "sha256": "2f797a9e432c292773882c756fecf1545c05fd34132269b761a157bab35b44df",
+      "tag": {
+        "page": 2,
+        "x": 0,
+        "y": 284,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 140207,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\transport_original_2.png",
+          "original_sha256": "5141c7432fca54a70d83b27f687322c8d1879d796c3954b5bf4ffe0360565ea8",
+          "canonical_sha256": "2f797a9e432c292773882c756fecf1545c05fd34132269b761a157bab35b44df",
+          "footer_crc_verified": true
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\capture_3.png",
+      "sha256": "b59010fe83173190cb01b8f9d47138166bb5589387b74f2599dbd84ea0754d8f",
+      "tag": {
+        "page": 3,
+        "x": 16,
+        "y": 284,
+        "width": 1280,
+        "height": 688,
+        "source_frame_id": 140207,
+        "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+        "geometry_id": 1627182983,
+        "flags": 127,
+        "footer_crc_verified": true,
+        "transport_restoration": {
+          "schema": "margin_transport_restore_v1",
+          "normalization": "vertical",
+          "original": "C:\\Users\\\u8096\u6c38\u5eb7\\Desktop\\\u9a8c\u8bc1\\wide_C1_20261031_194209_235361\\raw_groups\\frame_140207_20261031_203502_000194\\transport_original_3.png",
+          "original_sha256": "3e642bd3599dcdf9cd0882ad27890f090dc0a1ff6a89f2ac5a83a1b2defd9a23",
+          "canonical_sha256": "b59010fe83173190cb01b8f9d47138166bb5589387b74f2599dbd84ea0754d8f",
+          "footer_crc_verified": true
+        }
+      }
+    }
+  ],
+  "overlap_checks": [
+    {
+      "page": 1,
+      "mean_abs": 0.0015972273329408302,
+      "p99": 0.0
+    },
+    {
+      "page": 2,
+      "mean_abs": 0.0014915944719471948,
+      "p99": 0.0
+    },
+    {
+      "page": 3,
+      "mean_abs": 0.0011303936250517447,
+      "p99": 0.0
+    }
+  ],
+  "capture_compression_independently_verified": false,
+  "calibrated_model_applied": false,
+  "physical_lens_calibration_complete": false,
+  "image_sha256": "1992c003af1a1969fd0b5758ba8599a490532140910bd0a89f7db1f921501d41",
+  "dataset_split": "train"
+}

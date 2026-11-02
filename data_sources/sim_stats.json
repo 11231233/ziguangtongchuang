@@ -1,0 +1,21 @@
+{
+  "source": {
+    "width": 1296,
+    "height": 972,
+    "bytes": 2519424
+  },
+  "rd_requests": 68075,
+  "rd_beats": 140509,
+  "rd_bytes": 4496288,
+  "read_amplification": 1.785,
+  "fetch_cycles": 790901,
+  "render_cycles": 1063933,
+  "overlap_cycles": 789670,
+  "render_starved": 4933,
+  "wr_request_wait": 136817,
+  "pack_stall": 183,
+  "total_cycles": 1068878,
+  "total_ms_at_100MHz": 10.69,
+  "note": "旧仿真 DDR 模型（RD_LAT=0）的基线统计，用于事务数与读放大；板上实际慢 2.6 倍",
+  "command": "python scripts\\verify_margin_corrected_frame.py --angle 0"
+}

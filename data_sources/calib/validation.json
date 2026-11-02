@@ -1,0 +1,649 @@
+{
+  "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+  "model_kind": "rational5x6 (mirrored)",
+  "operator_full_window_confirmed": true,
+  "training_frames": 28,
+  "validation_frames": 10,
+  "source_images": [
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_101863_20261031_163148_004582.png",
+      "sha256": "46ab31361490980e4d70c6833920fa2bad129de2472984a414067a517884fb1b"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_140207_20261031_203502_454199.png",
+      "sha256": "1992c003af1a1969fd0b5758ba8599a490532140910bd0a89f7db1f921501d41"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_15762_20261031_152930_430067.png",
+      "sha256": "71164d6017081f3d8177b8d242cf8264287e26a7578d6dc164bdbd1e81df8cef"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_163223_20261031_205246_762819.png",
+      "sha256": "6b12149cdbe1a6faa7bbb53a063575c8bc102f2f12b4e17d22fe9804bf6902ce"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_165037_20261031_205247_770940.png",
+      "sha256": "ad63bee5e794052c26f4ffbf7fc893a1c06272e9dea79ee50fabaab273b10ffc"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_165945_20261031_205248_749241.png",
+      "sha256": "c592a9cb8983f9766d59b816817a6140d4eed3ae9f13f573c26e3a76ef9ba53c"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_21294_20261031_153232_054071.png",
+      "sha256": "4537ea9608747fe5425bb7e63e5d82be22847326eac25c78edbf78c81cef426e"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_22717_20261031_153300_019153.png",
+      "sha256": "1c4b6988ef67d19fdbb5eedd6faeaccda4bd50a2738a7ffd16e749d649392d76"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_24185_20261031_153328_615406.png",
+      "sha256": "4fe6e653b63e8fb8449b5f19fd792c6089c3ff6a52ada5017f5bdeae8dcb20b1"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_25018_20261031_153407_963010.png",
+      "sha256": "5727db93d249787c5a8e10a0fa3c38b84974c4ac28443d19d6a1cd6064e1fdd0"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_26112_20261031_153517_199696.png",
+      "sha256": "745a0f1b5794979d5d55d03966e2058fd91c5c47c556fe6855ec0dee16440ca8"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_26786_20261031_153532_302553.png",
+      "sha256": "8fba8fa7368f7058e21bce977bcc2d29d10c6a67193e9286c8a494839542f3f5"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_27803_20261031_153612_530022.png",
+      "sha256": "6a2728d4e1de2ec7dc85bd0678add16171fb317f9502b1204a01bfd5d396371d"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_31469_20261031_153901_830528.png",
+      "sha256": "3c900b9e7e703c355d30354bc16564eba3c4bbeb43a69014466fbc378a516363"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_32165_20261031_153927_131200.png",
+      "sha256": "38ab7c7886d973f1fdadb000f2f77a4a6d88f4f8d10e7f9947952c19c9fa47cf"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_34342_20261031_154102_706820.png",
+      "sha256": "581cf26c68ebc2f147c282c656e2857af9e119ad6fdd66339d03834124f07423"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_35199_20261031_154157_830620.png",
+      "sha256": "c06d02cc44f6051e8e666f7b778bca1207f7fd4bd2511d1b1ebab2d7e008011e"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_38011_20261031_154349_976284.png",
+      "sha256": "1b62081d26c89d60c97b5c164f512456d92146fffe60918f25f2599e1325a2dc"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_38757_20261031_154423_568424.png",
+      "sha256": "c3b74cd860805d8723c1130905c3bc2d82bdcc7ed1088c28fb068f316da10c94"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_39529_20261031_154458_038034.png",
+      "sha256": "8ec87bd746e2b3de1f4a008c9ab3da802742dad061bf159a2c8797bfb4504bb9"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_40338_20261031_154551_356381.png",
+      "sha256": "9bc0af2f4e7f11d53cdf3aef65a0e77e798345365bd8ea4954210a2c31f827cc"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_41416_20261031_154629_510329.png",
+      "sha256": "51b6e1f18b0e5c98cf19a756699254ad5803a58c7c71d379b3443a8e6e27fe21"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_42909_20261031_154730_828327.png",
+      "sha256": "82e0a3c30c140a536b84c09134ac1519bac4b008b0d00bccd82b5e507672e806"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_6064_20261031_152536_303098.png",
+      "sha256": "616c88d5cb22427ea3ff04d5800a76f2d7848d8b1b8c6ef3e35f79692bb8ef20"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_78550_20261031_161426_128007.png",
+      "sha256": "2f32201393d7dcea3f95cef2a5b497605a7c703941f458ae231c80dc32b4cb5d"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_85999_20261031_162001_179982.png",
+      "sha256": "dbd7631d8b32488303c387500d32ae11356dbd578cb4778a593f51febf84d3dc"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_88543_20261031_162215_067605.png",
+      "sha256": "26fc48e0a0040a76f1e4184afdecb8ab16964503c7b7d09abee797a98301e23e"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_92711_20261031_162455_215901.png",
+      "sha256": "b07eee0ff80f95a5d1a8e7d492f19e6c9d1af4e84aaf05c8909440e7b7a63a3e"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_126749_20261031_203459_333356.png",
+      "sha256": "5aeda6e4ab50c1ef2fe8ba603de15fbf7e4541287d0d366d1fb957e08d2aaf4c"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_153920_20261031_204435_773461.png",
+      "sha256": "95aef9200c1b11ed66bc0265a998ffc2d7c182362ca48b9dc77fde886d81c428"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_1541_20261101_092619_058514.png",
+      "sha256": "22ee97211ab3f0db7e91827cf6585abd0f87e08bea06aafd7dc1f2deb6ddb10a"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_21733_20261101_094132_370484.png",
+      "sha256": "92c29dfaf886394237f23a5031864ec033cc48b4e7d3587b8a0d5c760f068996"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_45274_20261031_155012_619769.png",
+      "sha256": "897bb1c90341e5dbfcf81ed1360216966a92175c913d80fc6a8b7f94dafe68c4"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47060_20261031_155040_489520.png",
+      "sha256": "cde9cb6f16b916685d90f9ce511e3c816ca96fef3ef706167123f7f867b295bf"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47668_20261031_155109_870384.png",
+      "sha256": "cb4f4bc87993f2ea4fd150ab79f68bf6abeb869203399ae243a671fc7ddf333d"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_48700_20261031_155154_958249.png",
+      "sha256": "06577acc8b294a153c82cdbf6e908f791148b8fc5c2d4613daefac106aff8c0f"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_49988_20261031_155248_347184.png",
+      "sha256": "2aaa67087b5ddf40d8e0d93a284b03a6ccb48335e3254e770bfd10951a182172"
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_94118_20261031_162602_627219.png",
+      "sha256": "a4286f666b410801122888420f9fab1beab0877dd0fba34002f0bde60f07ff65"
+    }
+  ],
+  "train_rms_px": 0.8222528269062223,
+  "heldout_rms_px": 0.9467105383516359,
+  "per_view": [
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_126749_20261031_203459_333356.png",
+      "rms_px": 0.9424522674395974,
+      "p95_px": 1.5981491770347325,
+      "max_px": 1.8661681112057291
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_153920_20261031_204435_773461.png",
+      "rms_px": 0.22912612983608338,
+      "p95_px": 0.3830549223815385,
+      "max_px": 0.6672324331733662
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_1541_20261101_092619_058514.png",
+      "rms_px": 0.5190695849667768,
+      "p95_px": 0.9384758968527723,
+      "max_px": 1.5615268322449518
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_21733_20261101_094132_370484.png",
+      "rms_px": 0.5675921268156278,
+      "p95_px": 0.9868554115857074,
+      "max_px": 1.1831494508866325
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_45274_20261031_155012_619769.png",
+      "rms_px": 0.9119575935714477,
+      "p95_px": 1.5488437626656062,
+      "max_px": 2.589415265369896
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47060_20261031_155040_489520.png",
+      "rms_px": 1.0467141061701686,
+      "p95_px": 1.9598296329114009,
+      "max_px": 3.1703619276867308
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47668_20261031_155109_870384.png",
+      "rms_px": 1.4355096352497245,
+      "p95_px": 2.3692288517508566,
+      "max_px": 3.935944462894457
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_48700_20261031_155154_958249.png",
+      "rms_px": 0.5208116864651827,
+      "p95_px": 0.7980898741963829,
+      "max_px": 0.8794160932750801
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_49988_20261031_155248_347184.png",
+      "rms_px": 0.9815962764513517,
+      "p95_px": 1.6146123847119978,
+      "max_px": 2.975756291000264
+    },
+    {
+      "file": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_94118_20261031_162602_627219.png",
+      "rms_px": 1.485785405063318,
+      "p95_px": 2.422120095228496,
+      "max_px": 3.106847323769869
+    }
+  ],
+  "spatial_coverage": {
+    "passed": true,
+    "region": [
+      63,
+      46,
+      1232,
+      893
+    ],
+    "edges": {
+      "left": {
+        "points": 91,
+        "views": 6
+      },
+      "right": {
+        "points": 62,
+        "views": 3
+      },
+      "top": {
+        "points": 118,
+        "views": 5
+      },
+      "bottom": {
+        "points": 55,
+        "views": 3
+      }
+    },
+    "corners": {
+      "tl": 24,
+      "tr": 37,
+      "bl": 15,
+      "br": 9
+    }
+  },
+  "effective_area": {
+    "region": [
+      63,
+      46,
+      1232,
+      893
+    ],
+    "source": "targets/effective_area.json"
+  },
+  "heldout_edge_errors": {
+    "left": {
+      "points": 18,
+      "rms_px": 0.98283258270846,
+      "p95_px": 1.866521338956978
+    },
+    "right": {
+      "points": 36,
+      "rms_px": 0.1829669532971123,
+      "p95_px": 0.31826185505985005
+    },
+    "top": {
+      "points": 75,
+      "rms_px": 0.7826971555581878,
+      "p95_px": 1.7086072878202354
+    },
+    "bottom": {
+      "points": 69,
+      "rms_px": 0.8896604664107746,
+      "p95_px": 1.7455980908389326
+    }
+  },
+  "mapping_coverage": {
+    "passed": true,
+    "full_pixel_audit": true,
+    "angle_range": [
+      -20,
+      20
+    ],
+    "rows": [
+      {
+        "angle": -20,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022345936219583865,
+        "min_jacobian_det": 0.9942398827013483,
+        "passed": true
+      },
+      {
+        "angle": -19,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02315918555388197,
+        "min_jacobian_det": 0.9942398845725229,
+        "passed": true
+      },
+      {
+        "angle": -18,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02225541457911967,
+        "min_jacobian_det": 0.9942398785499502,
+        "passed": true
+      },
+      {
+        "angle": -17,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022973204603678507,
+        "min_jacobian_det": 0.9942398645306159,
+        "passed": true
+      },
+      {
+        "angle": -16,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022144977188008494,
+        "min_jacobian_det": 0.9942398929002317,
+        "passed": true
+      },
+      {
+        "angle": -15,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022132692235333568,
+        "min_jacobian_det": 0.9942398704055752,
+        "passed": true
+      },
+      {
+        "angle": -14,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022458523191467135,
+        "min_jacobian_det": 0.9942398606941899,
+        "passed": true
+      },
+      {
+        "angle": -13,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023141096767564734,
+        "min_jacobian_det": 0.9942398598813535,
+        "passed": true
+      },
+      {
+        "angle": -12,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024346625618889468,
+        "min_jacobian_det": 0.9942398612535409,
+        "passed": true
+      },
+      {
+        "angle": -11,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02641222032112576,
+        "min_jacobian_det": 0.99423986073086,
+        "passed": true
+      },
+      {
+        "angle": -10,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024271341729042314,
+        "min_jacobian_det": 0.9942398661835914,
+        "passed": true
+      },
+      {
+        "angle": -9,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.025791376835601107,
+        "min_jacobian_det": 0.9942398720266888,
+        "passed": true
+      },
+      {
+        "angle": -8,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02445421522837533,
+        "min_jacobian_det": 0.9942398715887992,
+        "passed": true
+      },
+      {
+        "angle": -7,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02380735221338976,
+        "min_jacobian_det": 0.9942398607045659,
+        "passed": true
+      },
+      {
+        "angle": -6,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02712468431969904,
+        "min_jacobian_det": 0.9942398648714404,
+        "passed": true
+      },
+      {
+        "angle": -5,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.027857048891512023,
+        "min_jacobian_det": 0.9942398660648372,
+        "passed": true
+      },
+      {
+        "angle": -4,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023329180357332224,
+        "min_jacobian_det": 0.9942398669096387,
+        "passed": true
+      },
+      {
+        "angle": -3,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.029542717026441876,
+        "min_jacobian_det": 0.9942398611024246,
+        "passed": true
+      },
+      {
+        "angle": -2,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024224491912897807,
+        "min_jacobian_det": 0.9942398715892108,
+        "passed": true
+      },
+      {
+        "angle": -1,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022364635947126718,
+        "min_jacobian_det": 0.9942398746402585,
+        "passed": true
+      },
+      {
+        "angle": 0,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02339855312317974,
+        "min_jacobian_det": 0.9942398622642901,
+        "passed": true
+      },
+      {
+        "angle": 1,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02547559519629936,
+        "min_jacobian_det": 0.9942398606799696,
+        "passed": true
+      },
+      {
+        "angle": 2,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024588111105075174,
+        "min_jacobian_det": 0.9942398624589728,
+        "passed": true
+      },
+      {
+        "angle": 3,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.021935216732767094,
+        "min_jacobian_det": 0.9942398636885974,
+        "passed": true
+      },
+      {
+        "angle": 4,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023014634625172604,
+        "min_jacobian_det": 0.994239868640508,
+        "passed": true
+      },
+      {
+        "angle": 5,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023531856700036533,
+        "min_jacobian_det": 0.9942398664260472,
+        "passed": true
+      },
+      {
+        "angle": 6,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.022490626302873504,
+        "min_jacobian_det": 0.9942398712600821,
+        "passed": true
+      },
+      {
+        "angle": 7,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02219510386167834,
+        "min_jacobian_det": 0.9942398712277271,
+        "passed": true
+      },
+      {
+        "angle": 8,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023878806173198652,
+        "min_jacobian_det": 0.9942398730032627,
+        "passed": true
+      },
+      {
+        "angle": 9,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024926739381930196,
+        "min_jacobian_det": 0.9942398656278456,
+        "passed": true
+      },
+      {
+        "angle": 10,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.024836404125200058,
+        "min_jacobian_det": 0.9942398604883761,
+        "passed": true
+      },
+      {
+        "angle": 11,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.026242311101481623,
+        "min_jacobian_det": 0.9942398651148375,
+        "passed": true
+      },
+      {
+        "angle": 12,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.027969089915730723,
+        "min_jacobian_det": 0.994239867462735,
+        "passed": true
+      },
+      {
+        "angle": 13,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.023334094837392128,
+        "min_jacobian_det": 0.9942398643859585,
+        "passed": true
+      },
+      {
+        "angle": 14,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.02201847363378949,
+        "min_jacobian_det": 0.9942398660559808,
+        "passed": true
+      },
+      {
+        "angle": 15,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.025974333058943658,
+        "min_jacobian_det": 0.9942398611890902,
+        "passed": true
+      },
+      {
+        "angle": 16,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.027075928055939228,
+        "min_jacobian_det": 0.994239860929202,
+        "passed": true
+      },
+      {
+        "angle": 17,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.021948557912614023,
+        "min_jacobian_det": 0.9942398638214164,
+        "passed": true
+      },
+      {
+        "angle": 18,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.025083777932151816,
+        "min_jacobian_det": 0.9942398704002274,
+        "passed": true
+      },
+      {
+        "angle": 19,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.025934551741974947,
+        "min_jacobian_det": 0.9942398750343047,
+        "passed": true
+      },
+      {
+        "angle": 20,
+        "pixels": 921600,
+        "invalid_pixels": 0,
+        "max_fixed_error_px": 0.026923098427804888,
+        "min_jacobian_det": 0.9942398786925042,
+        "passed": true
+      }
+    ]
+  },
+  "rom": {
+    "file": "radial_lut.hex",
+    "sha256": "442e4aff0e52e68ac3b41e7d07294f38ab1902ace6c4c98ea35ca907cef67f5d"
+  },
+  "error_thresholds": {
+    "train_rms_px": 1.0,
+    "heldout_rms_px": 1.0,
+    "max_view_rms_px": 1.5,
+    "edge_rms_px": 1.0,
+    "edge_p95_px": 2.0,
+    "fixed_point_px": 0.25
+  },
+  "hardware_tested": false,
+  "model_sha256": "8dc41c5844ab1aed3cebfb0dd899882a9916c9a6de8a0602e49328bdc83ea50c",
+  "reasons": [],
+  "ready_for_runtime": true,
+  "mirror": {
+    "reason": "OV5640 is back-side illuminated; 0x3821 mirror bits must be SET to cancel the die's physical mirror. They were 0, so every frame was left-right reversed.",
+    "rtl_change": "ov5640_checked_config.v geometry_write 0x3821: 0x01 -> 0x07 (ISP mirror + sensor mirror on, horizontal binning bit kept)",
+    "model_change": "cx -> (W-1)-cx, p2 -> -p2; radial terms and the ROM are unchanged",
+    "equivalence": "verified: per-view RMS identical to the approved fit, max difference 0.000000 px over 38 frames"
+  }
+}

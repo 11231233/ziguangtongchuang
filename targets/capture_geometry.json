@@ -1,0 +1,76 @@
+{
+  "schema": "camera_geometry_v1",
+  "name": "C1_WIDE1296X972_CALIB_CANDIDATE",
+  "camera": "C1",
+  "source_size": [
+    1296,
+    972
+  ],
+  "source_stride_pixels": 1536,
+  "output_size": [
+    1280,
+    720
+  ],
+  "raw_view_size": [
+    1280,
+    688
+  ],
+  "raw_view_offsets": [
+    [
+      0,
+      0
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      0,
+      284
+    ],
+    [
+      16,
+      284
+    ]
+  ],
+  "source_flip_vertical": true,
+  "output_scale": [
+    1,
+    1
+  ],
+  "output_rotation_center": [
+    640,
+    360
+  ],
+  "target_rotation_degrees": [
+    -20,
+    20
+  ],
+  "runtime_auto_zoom": false,
+  "reference_roi": [
+    8,
+    126,
+    1280,
+    720
+  ],
+  "geometry_physically_verified": false,
+  "calibration_required": true,
+  "firmware_role": "raw_full_window_acquisition_only",
+  "sensor_profile": {
+    "x_start": 0,
+    "y_start": 0,
+    "x_end": 2623,
+    "y_end": 1951,
+    "x_offset": 8,
+    "y_offset": 2,
+    "width": 1296,
+    "height": 972,
+    "hts": 1892,
+    "vts": 1000,
+    "x_increment": 49,
+    "y_increment": 49,
+    "pll_multiplier": 105,
+    "timing20": 71,
+    "timing21": 1
+  }
+}

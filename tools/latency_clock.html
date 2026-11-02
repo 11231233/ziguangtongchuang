@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>摄像头端到端延迟对照时钟</title>
+<style>body{margin:0;background:#f6f6f6;color:#111;font-family:system-ui,sans-serif;text-align:center}main{padding:4vh 3vw}h1{font-size:clamp(18px,3vw,36px)}#clock{border:12px solid #111;background:white;font:700 clamp(55px,12vw,180px)/1.5 ui-monospace,Consolas,monospace;font-variant-numeric:tabular-nums}#pulse{height:10vh;border:3px solid #222;margin:20px 0}p{max-width:900px;margin:20px auto;line-height:1.8}button{padding:10px 20px;font-size:18px}</style>
+<main><h1>摄像头端到端延迟对照时钟</h1><div id="clock">00000.000</div><div id="pulse"></div><button id="full">全屏</button>
+<p>把 FPGA 摄像头对准电脑上的这块时钟，让 HDMI 显示器显示摄像头画面。手机同时拍到电脑原时钟与 HDMI 中的时钟，两者读数相减，近似估计端到端延迟。</p>
+<p>单位：秒。时钟随浏览器刷新更新，显示毫秒不代表毫秒级测量精度；显示刷新、曝光和手机滚动快门都会影响读数。多拍几张，保留原图并取中位数。原图对比模式也经过帧缓存，并非零延迟直通。</p>
+<section style="max-width:900px;margin:30px auto;text-align:left">
+<h2>录入同一张照片中的两个读数</h2>
+<p>拍照后再录入，电脑时钟读数应大于或等于 HDMI 中的读数。建议记录至少 10 张。屏幕上的 CALC 仅是 FPGA 计算耗时，不是此处测量的总延迟。</p>
+<label>电脑原时钟（秒） <input id="reference" type="number" min="0" step="0.001"></label>
+<label>HDMI 时钟（秒） <input id="hdmi" type="number" min="0" step="0.001"></label>
+<button id="add">记录</button> <button id="export">导出 CSV</button>
+<p id="stats" role="status">尚无实测样本。</p><ol id="samples"></ol></section></main>
+<script>const start=performance.now(),clock=document.getElementById('clock'),pulse=document.getElementById('pulse');function tick(){const ms=Math.floor(performance.now()-start);clock.textContent=String(Math.floor(ms/1000)).padStart(5,'0')+'.'+String(ms%1000).padStart(3,'0');pulse.style.background=Math.floor(ms/500)%2?'#111':'#fff';requestAnimationFrame(tick)}tick();document.getElementById('full').onclick=()=>document.documentElement.requestFullscreen?.();</script>
+<script>
+const rows=[];
+document.getElementById('add').onclick=()=>{
+const r=document.getElementById('reference'),h=document.getElementById('hdmi'),status=document.getElementById('stats');
+const a=Number(r.value),b=Number(h.value);
+if(!r.value||!h.value||!Number.isFinite(a)||!Number.isFinite(b)||b<0||a<b){status.textContent='读数无效，请核对同一张照片中的两个时钟。';return;}
+rows.push([a,b]);const item=document.createElement('li');item.textContent=`电脑 ${a.toFixed(3)} s，HDMI ${b.toFixed(3)} s，差值 ${((a-b)*1000).toFixed(1)} ms`;document.getElementById('samples').appendChild(item);
+const ds=rows.map(([a,b])=>(a-b)*1000).sort((a,b)=>a-b),n=ds.length,median=(ds[Math.floor((n-1)/2)]+ds[Math.floor(n/2)])/2;
+status.textContent=`${n} 个实测样本；中位数 ${median.toFixed(1)} ms；范围 ${ds[0].toFixed(1)}–${ds[n-1].toFixed(1)} ms。`;
+};
+document.getElementById('export').onclick=()=>{
+if(!rows.length){document.getElementById('stats').textContent='先录入实测样本，再导出。';return;}
+const csv='reference_s,hdmi_s\n'+rows.map(r=>r.join(',')).join('\n')+'\n',url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+const a=document.createElement('a');a.href=url;a.download='latency_samples.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+</script>
+</html>

@@ -1,0 +1,13 @@
+﻿数据类型,包内出处文件,说明
+标定精度、四边残差、41角度误差、有效区,calib/validation.json,原始JSON；最大定点误差约0.0295427px
+采集窗口、HTS/VTS,targets/capture_geometry.json,当前1296×972采集配置
+MTF50,mtf/pair_result_v2.json,0.2135→0.2137；归一化−0.2086%/未归一化+0.0937%
+格线直线度,mtf/straightness.json,RAW0.513/COR0.455px
+仿真事务与读放大,sim_stats.json,指定旧DDR模型用例，不是实板固定效率
+本版资源,PDS/place_route/run.log,CLMA LUT8554/FF9520，CLMS另计
+本版时序,PDS/report_timing/top_pangu50.rtr,WNS1.498ns/WHS0.191ns
+本版固件,PDS/generate_bitstream/top_pangu50.sbit,SHA256前缀47B43F71
+帧率、单帧耗时,视频测量/原始视频.mp4,按用户实板确认：本版16×16，CALC26～28ms；此前14ms解读撤回
+端到端读数,视频测量/paired_readings.csv,18组同帧读数；非严格同条件前后对照
+端到端统计,视频测量/measurement_summary.json,median105ms/mean108.3ms，样本80～140ms；原文件中14ms及优化版归属解释撤回，以00_资料索引为准
+标定原始图像,原始标定帧/原始帧指纹核对.json,38张原图及指纹核对，内容不变

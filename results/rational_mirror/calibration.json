@@ -1,0 +1,42 @@
+{
+  "model_kind": "rational5x6",
+  "fx": 324.8284950012653,
+  "fy": 325.05319292412025,
+  "cx": 646.3207346703157,
+  "cy": 464.8238152687883,
+  "k1": 0.1562988636446418,
+  "k2": 0.002410121656337309,
+  "p1": -1.4850175370736408e-05,
+  "p2": 3.0726744616653896e-05,
+  "k3": 1.7506370648089417e-06,
+  "k4": 0.3310694188575145,
+  "k5": 0.014502395008278612,
+  "k6": 5.416347006905043e-05,
+  "camera": "C1",
+  "image_size": [
+    1296,
+    972
+  ],
+  "geometry_sha256": "2ec19752c44a18fb23912967d64eeb6265c3c73e77bbe15ffcde058deacd5bcd",
+  "output_camera": {
+    "fx": 324.8284950012653,
+    "fy": 325.05319292412025,
+    "cx": 638.3207346703157,
+    "cy": 338.8238152687883,
+    "width": 1280,
+    "height": 720,
+    "selection": "fixed central virtual view at source pixel scale; never adjusted with rotation"
+  },
+  "radial_lut": "results ROM radial_lut.hex (2048 cells, Q24 base+delta, Q16 out)",
+  "rtl_radial_path": "RADIAL_MODEL_LUT=1, lut_enable=1 (k1,k2 forced to 0)",
+  "source_kind": "verified_margin_raw_calibration",
+  "synthetic_test_data": false,
+  "train_rms_px": 0.826406849569185,
+  "pattern": [
+    6,
+    9
+  ],
+  "square_mm": 24.0,
+  "training_frames": 28,
+  "validation_frames": 10
+}

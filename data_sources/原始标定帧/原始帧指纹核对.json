@@ -1,0 +1,272 @@
+{
+  "frames": 38,
+  "all_matched": true,
+  "images": [
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_101863_20261031_163148_004582.png",
+      "package": "08_标定原始帧/train/full_101863_20261031_163148_004582.png",
+      "expected_sha256": "46ab31361490980e4d70c6833920fa2bad129de2472984a414067a517884fb1b",
+      "actual_sha256": "46ab31361490980e4d70c6833920fa2bad129de2472984a414067a517884fb1b",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_140207_20261031_203502_454199.png",
+      "package": "08_标定原始帧/train/full_140207_20261031_203502_454199.png",
+      "expected_sha256": "1992c003af1a1969fd0b5758ba8599a490532140910bd0a89f7db1f921501d41",
+      "actual_sha256": "1992c003af1a1969fd0b5758ba8599a490532140910bd0a89f7db1f921501d41",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_15762_20261031_152930_430067.png",
+      "package": "08_标定原始帧/train/full_15762_20261031_152930_430067.png",
+      "expected_sha256": "71164d6017081f3d8177b8d242cf8264287e26a7578d6dc164bdbd1e81df8cef",
+      "actual_sha256": "71164d6017081f3d8177b8d242cf8264287e26a7578d6dc164bdbd1e81df8cef",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_163223_20261031_205246_762819.png",
+      "package": "08_标定原始帧/train/full_163223_20261031_205246_762819.png",
+      "expected_sha256": "6b12149cdbe1a6faa7bbb53a063575c8bc102f2f12b4e17d22fe9804bf6902ce",
+      "actual_sha256": "6b12149cdbe1a6faa7bbb53a063575c8bc102f2f12b4e17d22fe9804bf6902ce",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_165037_20261031_205247_770940.png",
+      "package": "08_标定原始帧/train/full_165037_20261031_205247_770940.png",
+      "expected_sha256": "ad63bee5e794052c26f4ffbf7fc893a1c06272e9dea79ee50fabaab273b10ffc",
+      "actual_sha256": "ad63bee5e794052c26f4ffbf7fc893a1c06272e9dea79ee50fabaab273b10ffc",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_165945_20261031_205248_749241.png",
+      "package": "08_标定原始帧/train/full_165945_20261031_205248_749241.png",
+      "expected_sha256": "c592a9cb8983f9766d59b816817a6140d4eed3ae9f13f573c26e3a76ef9ba53c",
+      "actual_sha256": "c592a9cb8983f9766d59b816817a6140d4eed3ae9f13f573c26e3a76ef9ba53c",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_21294_20261031_153232_054071.png",
+      "package": "08_标定原始帧/train/full_21294_20261031_153232_054071.png",
+      "expected_sha256": "4537ea9608747fe5425bb7e63e5d82be22847326eac25c78edbf78c81cef426e",
+      "actual_sha256": "4537ea9608747fe5425bb7e63e5d82be22847326eac25c78edbf78c81cef426e",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_22717_20261031_153300_019153.png",
+      "package": "08_标定原始帧/train/full_22717_20261031_153300_019153.png",
+      "expected_sha256": "1c4b6988ef67d19fdbb5eedd6faeaccda4bd50a2738a7ffd16e749d649392d76",
+      "actual_sha256": "1c4b6988ef67d19fdbb5eedd6faeaccda4bd50a2738a7ffd16e749d649392d76",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_24185_20261031_153328_615406.png",
+      "package": "08_标定原始帧/train/full_24185_20261031_153328_615406.png",
+      "expected_sha256": "4fe6e653b63e8fb8449b5f19fd792c6089c3ff6a52ada5017f5bdeae8dcb20b1",
+      "actual_sha256": "4fe6e653b63e8fb8449b5f19fd792c6089c3ff6a52ada5017f5bdeae8dcb20b1",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_25018_20261031_153407_963010.png",
+      "package": "08_标定原始帧/train/full_25018_20261031_153407_963010.png",
+      "expected_sha256": "5727db93d249787c5a8e10a0fa3c38b84974c4ac28443d19d6a1cd6064e1fdd0",
+      "actual_sha256": "5727db93d249787c5a8e10a0fa3c38b84974c4ac28443d19d6a1cd6064e1fdd0",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_26112_20261031_153517_199696.png",
+      "package": "08_标定原始帧/train/full_26112_20261031_153517_199696.png",
+      "expected_sha256": "745a0f1b5794979d5d55d03966e2058fd91c5c47c556fe6855ec0dee16440ca8",
+      "actual_sha256": "745a0f1b5794979d5d55d03966e2058fd91c5c47c556fe6855ec0dee16440ca8",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_26786_20261031_153532_302553.png",
+      "package": "08_标定原始帧/train/full_26786_20261031_153532_302553.png",
+      "expected_sha256": "8fba8fa7368f7058e21bce977bcc2d29d10c6a67193e9286c8a494839542f3f5",
+      "actual_sha256": "8fba8fa7368f7058e21bce977bcc2d29d10c6a67193e9286c8a494839542f3f5",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_27803_20261031_153612_530022.png",
+      "package": "08_标定原始帧/train/full_27803_20261031_153612_530022.png",
+      "expected_sha256": "6a2728d4e1de2ec7dc85bd0678add16171fb317f9502b1204a01bfd5d396371d",
+      "actual_sha256": "6a2728d4e1de2ec7dc85bd0678add16171fb317f9502b1204a01bfd5d396371d",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_31469_20261031_153901_830528.png",
+      "package": "08_标定原始帧/train/full_31469_20261031_153901_830528.png",
+      "expected_sha256": "3c900b9e7e703c355d30354bc16564eba3c4bbeb43a69014466fbc378a516363",
+      "actual_sha256": "3c900b9e7e703c355d30354bc16564eba3c4bbeb43a69014466fbc378a516363",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_32165_20261031_153927_131200.png",
+      "package": "08_标定原始帧/train/full_32165_20261031_153927_131200.png",
+      "expected_sha256": "38ab7c7886d973f1fdadb000f2f77a4a6d88f4f8d10e7f9947952c19c9fa47cf",
+      "actual_sha256": "38ab7c7886d973f1fdadb000f2f77a4a6d88f4f8d10e7f9947952c19c9fa47cf",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_34342_20261031_154102_706820.png",
+      "package": "08_标定原始帧/train/full_34342_20261031_154102_706820.png",
+      "expected_sha256": "581cf26c68ebc2f147c282c656e2857af9e119ad6fdd66339d03834124f07423",
+      "actual_sha256": "581cf26c68ebc2f147c282c656e2857af9e119ad6fdd66339d03834124f07423",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_35199_20261031_154157_830620.png",
+      "package": "08_标定原始帧/train/full_35199_20261031_154157_830620.png",
+      "expected_sha256": "c06d02cc44f6051e8e666f7b778bca1207f7fd4bd2511d1b1ebab2d7e008011e",
+      "actual_sha256": "c06d02cc44f6051e8e666f7b778bca1207f7fd4bd2511d1b1ebab2d7e008011e",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_38011_20261031_154349_976284.png",
+      "package": "08_标定原始帧/train/full_38011_20261031_154349_976284.png",
+      "expected_sha256": "1b62081d26c89d60c97b5c164f512456d92146fffe60918f25f2599e1325a2dc",
+      "actual_sha256": "1b62081d26c89d60c97b5c164f512456d92146fffe60918f25f2599e1325a2dc",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_38757_20261031_154423_568424.png",
+      "package": "08_标定原始帧/train/full_38757_20261031_154423_568424.png",
+      "expected_sha256": "c3b74cd860805d8723c1130905c3bc2d82bdcc7ed1088c28fb068f316da10c94",
+      "actual_sha256": "c3b74cd860805d8723c1130905c3bc2d82bdcc7ed1088c28fb068f316da10c94",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_39529_20261031_154458_038034.png",
+      "package": "08_标定原始帧/train/full_39529_20261031_154458_038034.png",
+      "expected_sha256": "8ec87bd746e2b3de1f4a008c9ab3da802742dad061bf159a2c8797bfb4504bb9",
+      "actual_sha256": "8ec87bd746e2b3de1f4a008c9ab3da802742dad061bf159a2c8797bfb4504bb9",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_40338_20261031_154551_356381.png",
+      "package": "08_标定原始帧/train/full_40338_20261031_154551_356381.png",
+      "expected_sha256": "9bc0af2f4e7f11d53cdf3aef65a0e77e798345365bd8ea4954210a2c31f827cc",
+      "actual_sha256": "9bc0af2f4e7f11d53cdf3aef65a0e77e798345365bd8ea4954210a2c31f827cc",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_41416_20261031_154629_510329.png",
+      "package": "08_标定原始帧/train/full_41416_20261031_154629_510329.png",
+      "expected_sha256": "51b6e1f18b0e5c98cf19a756699254ad5803a58c7c71d379b3443a8e6e27fe21",
+      "actual_sha256": "51b6e1f18b0e5c98cf19a756699254ad5803a58c7c71d379b3443a8e6e27fe21",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_42909_20261031_154730_828327.png",
+      "package": "08_标定原始帧/train/full_42909_20261031_154730_828327.png",
+      "expected_sha256": "82e0a3c30c140a536b84c09134ac1519bac4b008b0d00bccd82b5e507672e806",
+      "actual_sha256": "82e0a3c30c140a536b84c09134ac1519bac4b008b0d00bccd82b5e507672e806",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_6064_20261031_152536_303098.png",
+      "package": "08_标定原始帧/train/full_6064_20261031_152536_303098.png",
+      "expected_sha256": "616c88d5cb22427ea3ff04d5800a76f2d7848d8b1b8c6ef3e35f79692bb8ef20",
+      "actual_sha256": "616c88d5cb22427ea3ff04d5800a76f2d7848d8b1b8c6ef3e35f79692bb8ef20",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_78550_20261031_161426_128007.png",
+      "package": "08_标定原始帧/train/full_78550_20261031_161426_128007.png",
+      "expected_sha256": "2f32201393d7dcea3f95cef2a5b497605a7c703941f458ae231c80dc32b4cb5d",
+      "actual_sha256": "2f32201393d7dcea3f95cef2a5b497605a7c703941f458ae231c80dc32b4cb5d",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_85999_20261031_162001_179982.png",
+      "package": "08_标定原始帧/train/full_85999_20261031_162001_179982.png",
+      "expected_sha256": "dbd7631d8b32488303c387500d32ae11356dbd578cb4778a593f51febf84d3dc",
+      "actual_sha256": "dbd7631d8b32488303c387500d32ae11356dbd578cb4778a593f51febf84d3dc",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_88543_20261031_162215_067605.png",
+      "package": "08_标定原始帧/train/full_88543_20261031_162215_067605.png",
+      "expected_sha256": "26fc48e0a0040a76f1e4184afdecb8ab16964503c7b7d09abee797a98301e23e",
+      "actual_sha256": "26fc48e0a0040a76f1e4184afdecb8ab16964503c7b7d09abee797a98301e23e",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\train\\full_92711_20261031_162455_215901.png",
+      "package": "08_标定原始帧/train/full_92711_20261031_162455_215901.png",
+      "expected_sha256": "b07eee0ff80f95a5d1a8e7d492f19e6c9d1af4e84aaf05c8909440e7b7a63a3e",
+      "actual_sha256": "b07eee0ff80f95a5d1a8e7d492f19e6c9d1af4e84aaf05c8909440e7b7a63a3e",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_126749_20261031_203459_333356.png",
+      "package": "08_标定原始帧/validation/full_126749_20261031_203459_333356.png",
+      "expected_sha256": "5aeda6e4ab50c1ef2fe8ba603de15fbf7e4541287d0d366d1fb957e08d2aaf4c",
+      "actual_sha256": "5aeda6e4ab50c1ef2fe8ba603de15fbf7e4541287d0d366d1fb957e08d2aaf4c",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_153920_20261031_204435_773461.png",
+      "package": "08_标定原始帧/validation/full_153920_20261031_204435_773461.png",
+      "expected_sha256": "95aef9200c1b11ed66bc0265a998ffc2d7c182362ca48b9dc77fde886d81c428",
+      "actual_sha256": "95aef9200c1b11ed66bc0265a998ffc2d7c182362ca48b9dc77fde886d81c428",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_1541_20261101_092619_058514.png",
+      "package": "08_标定原始帧/validation/full_1541_20261101_092619_058514.png",
+      "expected_sha256": "22ee97211ab3f0db7e91827cf6585abd0f87e08bea06aafd7dc1f2deb6ddb10a",
+      "actual_sha256": "22ee97211ab3f0db7e91827cf6585abd0f87e08bea06aafd7dc1f2deb6ddb10a",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_21733_20261101_094132_370484.png",
+      "package": "08_标定原始帧/validation/full_21733_20261101_094132_370484.png",
+      "expected_sha256": "92c29dfaf886394237f23a5031864ec033cc48b4e7d3587b8a0d5c760f068996",
+      "actual_sha256": "92c29dfaf886394237f23a5031864ec033cc48b4e7d3587b8a0d5c760f068996",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_45274_20261031_155012_619769.png",
+      "package": "08_标定原始帧/validation/full_45274_20261031_155012_619769.png",
+      "expected_sha256": "897bb1c90341e5dbfcf81ed1360216966a92175c913d80fc6a8b7f94dafe68c4",
+      "actual_sha256": "897bb1c90341e5dbfcf81ed1360216966a92175c913d80fc6a8b7f94dafe68c4",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47060_20261031_155040_489520.png",
+      "package": "08_标定原始帧/validation/full_47060_20261031_155040_489520.png",
+      "expected_sha256": "cde9cb6f16b916685d90f9ce511e3c816ca96fef3ef706167123f7f867b295bf",
+      "actual_sha256": "cde9cb6f16b916685d90f9ce511e3c816ca96fef3ef706167123f7f867b295bf",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_47668_20261031_155109_870384.png",
+      "package": "08_标定原始帧/validation/full_47668_20261031_155109_870384.png",
+      "expected_sha256": "cb4f4bc87993f2ea4fd150ab79f68bf6abeb869203399ae243a671fc7ddf333d",
+      "actual_sha256": "cb4f4bc87993f2ea4fd150ab79f68bf6abeb869203399ae243a671fc7ddf333d",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_48700_20261031_155154_958249.png",
+      "package": "08_标定原始帧/validation/full_48700_20261031_155154_958249.png",
+      "expected_sha256": "06577acc8b294a153c82cdbf6e908f791148b8fc5c2d4613daefac106aff8c0f",
+      "actual_sha256": "06577acc8b294a153c82cdbf6e908f791148b8fc5c2d4613daefac106aff8c0f",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_49988_20261031_155248_347184.png",
+      "package": "08_标定原始帧/validation/full_49988_20261031_155248_347184.png",
+      "expected_sha256": "2aaa67087b5ddf40d8e0d93a284b03a6ccb48335e3254e770bfd10951a182172",
+      "actual_sha256": "2aaa67087b5ddf40d8e0d93a284b03a6ccb48335e3254e770bfd10951a182172",
+      "matched": true
+    },
+    {
+      "original": "F:\\chuankou\\wide_C1_20261031_151128_204125\\validation\\full_94118_20261031_162602_627219.png",
+      "package": "08_标定原始帧/validation/full_94118_20261031_162602_627219.png",
+      "expected_sha256": "a4286f666b410801122888420f9fab1beab0877dd0fba34002f0bde60f07ff65",
+      "actual_sha256": "a4286f666b410801122888420f9fab1beab0877dd0fba34002f0bde60f07ff65",
+      "matched": true
+    }
+  ]
+}

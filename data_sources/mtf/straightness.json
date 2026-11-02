@@ -1,0 +1,62 @@
+{
+  "raw": {
+    "frame": "F:\\ziguang_jibian\\A_first.png",
+    "pattern": [
+      6,
+      9
+    ],
+    "line_rms_median_px": 0.513,
+    "line_rms_max_px": 0.829,
+    "point_dev_max_px": 1.344,
+    "per_line_rms_px": [
+      0.412,
+      0.551,
+      0.117,
+      0.234,
+      0.293,
+      0.346,
+      0.067,
+      0.673,
+      0.328,
+      0.513,
+      0.55,
+      0.697,
+      0.829,
+      0.583,
+      0.533
+    ]
+  },
+  "cor": {
+    "frame": "F:\\ziguang_jibian\\B_second.png",
+    "pattern": [
+      6,
+      9
+    ],
+    "line_rms_median_px": 0.455,
+    "line_rms_max_px": 0.725,
+    "point_dev_max_px": 1.265,
+    "per_line_rms_px": [
+      0.428,
+      0.626,
+      0.123,
+      0.253,
+      0.275,
+      0.329,
+      0.057,
+      0.696,
+      0.365,
+      0.455,
+      0.567,
+      0.613,
+      0.725,
+      0.549,
+      0.528
+    ]
+  },
+  "improvement": {
+    "raw": 0.513,
+    "cor": 0.455,
+    "ratio": 1.13,
+    "note": "同一对帧、同一组格线，仅 KEY0 切换 RAW/COR"
+  }
+}

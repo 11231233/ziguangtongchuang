@@ -1,0 +1,8 @@
+{
+  "runtime_top_integrated": true,
+  "real_calibration_approved": true,
+  "hardware_tested": false,
+  "source_baseline": "wancheng_ziguang_jibian_codex GUI build",
+  "original_bitstream_sha256": "47b43f71cbda3bf63dd16e16297099ce8aecd916b6e1726e8db95007cbf36046",
+  "note": "Original GUI firmware and board measurements retained. This relocated source has not been rebuilt or reprogrammed; only ROM path changed."
+}
